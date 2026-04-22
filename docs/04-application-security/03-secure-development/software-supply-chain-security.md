@@ -19,33 +19,18 @@ sidebar_position: 2
 ### 가. 공급망 보안의 개념도 및 위협 지점
 
 ```mermaid
-flowchart LR
-    subgraph DEV["개발 단계"]
-        A["소스코드 작성"] --> B["빌드 / 컴파일"]
-        B --> C["패키지 생성"]
-    end
+flowchart TD
+    A["소스코드 작성\n(개발 단계)"] --> B["빌드 / 컴파일"]
+    B --> C["패키지 생성"]
+    C --> D["저장소 등록\n(배포 단계)"]
+    D --> E["패키지 배포"]
+    E --> F["의존성 설치\n(운영 단계)"]
+    F --> G["서비스 운영"]
 
-    subgraph DIST["배포 단계"]
-        D["저장소 등록"] --> E["패키지 배포"]
-    end
-
-    subgraph OPS["운영 단계"]
-        F["의존성 설치"] --> G["서비스 운영"]
-    end
-
-    DEV --> DIST --> OPS
-
-    T1("악성 코드 삽입 Code Injection"):::threat
-    T2("의존성 혼동 Dependency Confusion"):::threat
-    T3("패키지 위변조 Tampering"):::threat
-    T4("취약한 라이브러리 Vulnerable Dependencies"):::threat
-
-    T1 -. "위협" .-> B
-    T2 -. "위협" .-> D
-    T3 -. "위협" .-> E
-    T4 -. "위협" .-> F
-
-    classDef threat fill:#fff0f0,stroke:#d9534f,color:#a94442
+    T1["⚠ 악성 코드 삽입\n(Code Injection)"] -. "위협" .-> B
+    T2["⚠ 의존성 혼동\n(Dependency Confusion)"] -. "위협" .-> D
+    T3["⚠ 패키지 위변조\n(Tampering)"] -. "위협" .-> E
+    T4["⚠ 취약한 라이브러리\n(Vulnerable Deps)"] -. "위협" .-> F
 ```
 
 > **핵심:** 개발 단계부터 배포까지 각 접점에 대한 **무결성 검증** 및 **추적성 확보**가 핵심

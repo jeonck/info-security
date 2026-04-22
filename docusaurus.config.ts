@@ -3,18 +3,17 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   title: '정보보안 지식베이스',
   tagline: '정보보안 분야 기술을 체계적으로 정리합니다',
   favicon: 'img/favicon.ico',
 
   future: {
-    v4: {
-      removeLegacyPostBuildHeadAttribute: true,
-      useCssCascadeLayers: true,
-      siteStorageNamespacing: true,
-      fasterByDefault: true,
-      mdx1CompatDisabledByDefault: false,
-    },
+    v4: true,
   },
 
   url: 'https://jeonck.github.io',
@@ -24,14 +23,7 @@ const config: Config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  markdown: {
-    mermaid: true,
-    hooks: {
-      onBrokenMarkdownLinks: 'warn',
-    },
-  },
-
-  themes: ['@docusaurus/theme-mermaid'],
+  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'ko',
