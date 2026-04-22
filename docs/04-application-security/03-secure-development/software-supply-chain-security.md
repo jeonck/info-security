@@ -20,30 +20,30 @@ sidebar_position: 2
 
 ```mermaid
 flowchart LR
-    subgraph DEV["🖥️ 개발 단계"]
-        A[소스코드 작성] --> B[빌드 / 컴파일]
-        B --> C[패키지 생성]
+    subgraph DEV["개발 단계"]
+        A["소스코드 작성"] --> B["빌드 / 컴파일"]
+        B --> C["패키지 생성"]
     end
 
-    subgraph DIST["📦 배포 단계"]
-        D[저장소 등록] --> E[패키지 배포]
+    subgraph DIST["배포 단계"]
+        D["저장소 등록"] --> E["패키지 배포"]
     end
 
-    subgraph OPS["⚙️ 운영 단계"]
-        F[의존성 설치] --> G[서비스 운영]
+    subgraph OPS["운영 단계"]
+        F["의존성 설치"] --> G["서비스 운영"]
     end
 
     DEV --> DIST --> OPS
 
-    T1("⚠️ 악성 코드 삽입\nCode Injection"):::threat
-    T2("⚠️ 의존성 혼동\nDependency Confusion"):::threat
-    T3("⚠️ 패키지 위변조\nTampering"):::threat
-    T4("⚠️ 취약한 라이브러리\nVulnerable Dependencies"):::threat
+    T1("악성 코드 삽입 Code Injection"):::threat
+    T2("의존성 혼동 Dependency Confusion"):::threat
+    T3("패키지 위변조 Tampering"):::threat
+    T4("취약한 라이브러리 Vulnerable Dependencies"):::threat
 
-    T1 -. 위협 .-> B
-    T2 -. 위협 .-> D
-    T3 -. 위협 .-> E
-    T4 -. 위협 .-> F
+    T1 -. "위협" .-> B
+    T2 -. "위협" .-> D
+    T3 -. "위협" .-> E
+    T4 -. "위협" .-> F
 
     classDef threat fill:#fff0f0,stroke:#d9534f,color:#a94442
 ```
