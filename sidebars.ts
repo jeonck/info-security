@@ -39,7 +39,14 @@ const sidebars: SidebarsConfig = {
       items: [
         {type: 'doc', id: 'application-security/web-security/index', label: '웹 보안'},
         {type: 'doc', id: 'application-security/api-security/index', label: 'API 보안'},
-        {type: 'doc', id: 'application-security/secure-development/index', label: '시큐어 개발'},
+        {
+          type: 'category',
+          label: '시큐어 개발',
+          link: {type: 'doc', id: 'application-security/secure-development/index'},
+          items: [
+            {type: 'doc', id: 'application-security/secure-development/software-supply-chain-security', label: '소프트웨어 공급망 보안'},
+          ],
+        },
       ],
     },
     {
