@@ -19,35 +19,18 @@ sidebar_position: 2
 ### 가. 공급망 보안의 개념도 및 위협 지점
 
 ```mermaid
-flowchart LR
-    subgraph DEV["개발 단계"]
-        A1["소스코드 작성\n(자체 / OSS)"] --> A2["SAST\n정적 분석"]
-        A2 --> A3["SCA\n구성 분석"]
-        A3 --> A4["빌드 / 컴파일\nCI/CD"]
-    end
+flowchart TD
+    A["소스코드 작성\n(개발 단계)"] --> B["빌드 / 컴파일"]
+    B --> C["패키지 생성"]
+    C --> D["저장소 등록\n(배포 단계)"]
+    D --> E["패키지 배포"]
+    E --> F["의존성 설치\n(운영 단계)"]
+    F --> G["서비스 운영"]
 
-    subgraph PKG["패키징 / 서명"]
-        B1["패키지 생성"] --> B2["코드 서명\nCode Signing"]
-        B2 --> B3["SBOM 생성\nCycloneDX/SPDX"]
-    end
-
-    subgraph DIST["배포 단계"]
-        C1["레지스트리 등록\nnpm / PyPI / Maven"] --> C2["패키지 배포\nCDN / 미러"]
-    end
-
-    subgraph OPS["운영 단계"]
-        D1["의존성 설치"] --> D2["서명 검증\n해시 확인"]
-        D2 --> D3["서비스 운영\n모니터링"]
-    end
-
-    DEV --> PKG --> DIST --> OPS
-
-    T1["⚠ OSS 취약점\nLog4j 등"] -. "위협" .-> A1
-    T2["⚠ 악성코드 삽입\nCode Injection"] -. "위협" .-> A4
-    T3["⚠ 빌드 스크립트 변조\nBuild Tampering"] -. "위협" .-> A4
-    T4["⚠ 의존성 혼동\nDependency Confusion"] -. "위협" .-> C1
-    T5["⚠ 패키지 위변조\nTampering"] -. "위협" .-> C2
-    T6["⚠ 취약한 의존성\nVulnerable Deps"] -. "위협" .-> D1
+    T1["⚠ 악성 코드 삽입\n(Code Injection)"] -. "위협" .-> B
+    T2["⚠ 의존성 혼동\n(Dependency Confusion)"] -. "위협" .-> D
+    T3["⚠ 패키지 위변조\n(Tampering)"] -. "위협" .-> E
+    T4["⚠ 취약한 라이브러리\n(Vulnerable Deps)"] -. "위협" .-> F
 ```
 
 > **핵심:** 개발 단계부터 배포까지 각 접점에 대한 **무결성 검증** 및 **추적성 확보**가 핵심
