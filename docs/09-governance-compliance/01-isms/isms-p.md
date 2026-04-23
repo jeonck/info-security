@@ -1,7 +1,7 @@
 ---
 title: ISMS-P
 sidebar_label: ISMS-P
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # ISMS-P (Personal Information & Information Security Management System)

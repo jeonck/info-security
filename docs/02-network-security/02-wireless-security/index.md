@@ -1,7 +1,7 @@
 ---
 title: 무선 보안
 sidebar_label: 무선 보안
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # 무선 보안 (Wireless Security)

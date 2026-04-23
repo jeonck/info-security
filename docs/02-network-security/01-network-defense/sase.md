@@ -1,7 +1,7 @@
 ---
 title: SASE (Secure Access Service Edge)
 sidebar_label: SASE
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # SASE (Secure Access Service Edge)

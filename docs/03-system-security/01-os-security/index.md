@@ -1,7 +1,7 @@
 ---
 title: 운영체제 보안
 sidebar_label: 운영체제 보안
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 운영체제 보안 (OS Security)

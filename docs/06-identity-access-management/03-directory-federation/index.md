@@ -1,7 +1,7 @@
 ---
 title: 디렉터리 & 페더레이션
 sidebar_label: 디렉터리 & 페더레이션
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 # 디렉터리 & 페더레이션 (Directory & Federation)

@@ -1,7 +1,7 @@
 ---
 title: 법규 & 규제
 sidebar_label: 법규 & 규제
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # 법규 & 규제 (Regulations)

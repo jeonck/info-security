@@ -1,7 +1,7 @@
 ---
 title: 시큐어 개발
 sidebar_label: 시큐어 개발
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 # 시큐어 개발 (Secure Development)

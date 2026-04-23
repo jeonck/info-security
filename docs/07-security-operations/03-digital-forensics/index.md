@@ -1,7 +1,7 @@
 ---
 title: 디지털 포렌식
 sidebar_label: 디지털 포렌식
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 # 디지털 포렌식 (Digital Forensics)

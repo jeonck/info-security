@@ -1,7 +1,7 @@
 ---
 title: 공격 기법 & 침투 테스트
 sidebar_label: 개요
-sidebar_position: 8
+sidebar_position: 0
 ---
 
 # 공격 기법 & 침투 테스트 (Offensive Security)

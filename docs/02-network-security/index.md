@@ -1,7 +1,7 @@
 ---
 title: 네트워크 보안
 sidebar_label: 개요
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # 네트워크 보안 (Network Security)

@@ -1,7 +1,7 @@
 ---
 title: 가명처리 기술 5가지
 sidebar_label: 가명처리 기술
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # 가명처리 기술 5가지

@@ -1,7 +1,7 @@
 ---
 title: SOC & SIEM
 sidebar_label: SOC & SIEM
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # SOC & SIEM

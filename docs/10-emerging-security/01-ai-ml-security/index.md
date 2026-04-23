@@ -1,7 +1,7 @@
 ---
 title: AI/ML 보안
 sidebar_label: AI/ML 보안
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # AI/ML 보안 (AI/ML Security)

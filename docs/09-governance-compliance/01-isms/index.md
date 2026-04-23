@@ -1,7 +1,7 @@
 ---
 title: 정보보안 관리체계 (ISMS)
 sidebar_label: 정보보안 관리체계 (ISMS)
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 정보보안 관리체계 (ISMS)

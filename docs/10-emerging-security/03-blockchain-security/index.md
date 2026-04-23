@@ -1,7 +1,7 @@
 ---
 title: 블록체인 보안
 sidebar_label: 블록체인 보안
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 # 블록체인 보안 (Blockchain Security)

@@ -1,7 +1,7 @@
 ---
 title: 신기술 보안
 sidebar_label: 개요
-sidebar_position: 10
+sidebar_position: 0
 ---
 
 # 신기술 보안 (Emerging Technology Security)

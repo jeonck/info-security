@@ -1,7 +1,7 @@
 ---
 title: 애플리케이션 보안
 sidebar_label: 개요
-sidebar_position: 4
+sidebar_position: 0
 ---
 
 # 애플리케이션 보안 (Application Security)

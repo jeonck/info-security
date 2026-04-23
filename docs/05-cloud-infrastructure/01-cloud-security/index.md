@@ -1,7 +1,7 @@
 ---
 title: 클라우드 서비스 보안
 sidebar_label: 클라우드 서비스 보안
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 클라우드 서비스 보안 (Cloud Services Security)

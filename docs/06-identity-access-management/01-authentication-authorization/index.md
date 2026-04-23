@@ -1,7 +1,7 @@
 ---
 title: 인증 & 인가
 sidebar_label: 인증 & 인가
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 인증 & 인가 (Authentication & Authorization)

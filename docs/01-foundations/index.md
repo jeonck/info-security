@@ -1,7 +1,7 @@
 ---
 title: 보안 기반 이론
 sidebar_label: 개요
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 보안 기반 이론 (Security Foundations)

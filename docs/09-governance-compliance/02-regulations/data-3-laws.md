@@ -1,7 +1,7 @@
 ---
 title: 데이터 3법 - 가명정보와 익명정보 및 결합 절차
 sidebar_label: 데이터 3법
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 데이터 3법: 가명정보와 익명정보 및 결합 절차

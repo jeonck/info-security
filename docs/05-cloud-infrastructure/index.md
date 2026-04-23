@@ -1,7 +1,7 @@
 ---
 title: 클라우드 & 인프라 보안
 sidebar_label: 개요
-sidebar_position: 5
+sidebar_position: 0
 ---
 
 # 클라우드 & 인프라 보안 (Cloud & Infrastructure Security)

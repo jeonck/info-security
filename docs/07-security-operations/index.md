@@ -1,7 +1,7 @@
 ---
 title: 보안 운영
 sidebar_label: 개요
-sidebar_position: 7
+sidebar_position: 0
 ---
 
 # 보안 운영 (Security Operations)

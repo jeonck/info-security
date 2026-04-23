@@ -1,7 +1,7 @@
 ---
 title: API 보안
 sidebar_label: API 보안
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # API 보안 (API Security)

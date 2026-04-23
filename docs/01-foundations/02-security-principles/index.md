@@ -1,7 +1,7 @@
 ---
 title: 보안 원칙과 모델
 sidebar_label: 보안 원칙과 모델
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # 보안 원칙과 모델 (Security Principles & Models)

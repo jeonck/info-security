@@ -1,7 +1,7 @@
 ---
 title: 레드팀 & CTF
 sidebar_label: 레드팀 & CTF
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 # 레드팀 & CTF

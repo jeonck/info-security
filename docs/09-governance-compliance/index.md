@@ -1,7 +1,7 @@
 ---
 title: 거버넌스 & 컴플라이언스
 sidebar_label: 개요
-sidebar_position: 9
+sidebar_position: 0
 ---
 
 # 거버넌스 & 컴플라이언스 (Governance & Compliance)

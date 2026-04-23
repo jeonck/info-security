@@ -1,7 +1,7 @@
 ---
 title: 인시던트 대응
 sidebar_label: 인시던트 대응
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # 인시던트 대응 (Incident Response)

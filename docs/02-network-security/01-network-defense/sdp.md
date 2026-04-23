@@ -1,7 +1,7 @@
 ---
 title: SDP (Software Defined Perimeter)
 sidebar_label: SDP
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # SDP (Software Defined Perimeter)

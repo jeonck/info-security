@@ -1,7 +1,7 @@
 ---
 title: 웹 보안
 sidebar_label: 웹 보안
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 웹 보안 (Web Security)

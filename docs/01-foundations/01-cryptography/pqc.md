@@ -1,7 +1,7 @@
 ---
 title: 양자 내성 암호 (PQC, Post-Quantum Cryptography)
 sidebar_label: 양자 내성 암호 (PQC)
-sidebar_position: 1
+sidebar_position: 11
 ---
 
 # 양자 내성 암호 (PQC, Post-Quantum Cryptography)

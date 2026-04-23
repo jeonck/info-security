@@ -1,7 +1,7 @@
 ---
 title: 암호학
 sidebar_label: 암호학
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 암호학 (Cryptography)

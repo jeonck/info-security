@@ -1,7 +1,7 @@
 ---
 title: 특권 접근 관리 (PAM)
 sidebar_label: 특권 접근 관리 (PAM)
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # 특권 접근 관리 (Privileged Access Management)

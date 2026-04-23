@@ -1,7 +1,7 @@
 ---
 title: 네트워크 방어
 sidebar_label: 네트워크 방어
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 네트워크 방어 (Network Defense)

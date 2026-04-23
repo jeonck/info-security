@@ -1,7 +1,7 @@
 ---
 title: IoT/OT 보안
 sidebar_label: IoT/OT 보안
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # IoT/OT 보안 (IoT/OT Security)

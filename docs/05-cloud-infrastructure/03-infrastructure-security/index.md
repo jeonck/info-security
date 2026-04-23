@@ -1,7 +1,7 @@
 ---
 title: 인프라 보안
 sidebar_label: 인프라 보안
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 # 인프라 보안 (Infrastructure Security)

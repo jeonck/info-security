@@ -1,7 +1,7 @@
 ---
 title: DB 암호화 기술 (API, Plug-in, TDE)
 sidebar_label: DB 암호화 기술
-sidebar_position: 2
+sidebar_position: 13
 ---
 
 # DB 암호화 기술 (API, Plug-in, TDE)

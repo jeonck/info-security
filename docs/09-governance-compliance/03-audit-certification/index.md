@@ -1,7 +1,7 @@
 ---
 title: 감사 & 인증
 sidebar_label: 감사 & 인증
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 # 감사 & 인증 (Audit & Certification)

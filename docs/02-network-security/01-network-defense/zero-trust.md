@@ -1,7 +1,7 @@
 ---
 title: 제로 트러스트 (Zero Trust)
 sidebar_label: 제로 트러스트
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 제로 트러스트 (Zero Trust)

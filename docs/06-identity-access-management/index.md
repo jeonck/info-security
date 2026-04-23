@@ -1,7 +1,7 @@
 ---
 title: 아이덴티티 & 접근관리
 sidebar_label: 개요
-sidebar_position: 6
+sidebar_position: 0
 ---
 
 # 아이덴티티 & 접근관리 (Identity & Access Management)

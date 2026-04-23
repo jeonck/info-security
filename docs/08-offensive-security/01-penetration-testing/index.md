@@ -1,7 +1,7 @@
 ---
 title: 침투 테스트
 sidebar_label: 침투 테스트
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 침투 테스트 (Penetration Testing)
