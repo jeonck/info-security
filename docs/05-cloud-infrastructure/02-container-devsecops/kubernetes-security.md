@@ -6,11 +6,22 @@ sidebar_position: 2
 
 # 클라우드 네이티브 환경의 중추, 쿠버네티스 보안
 
-## I. 다층 방어 체계, 쿠버네티스 보안의 정의
+## I. 다층 방어 체계, 쿠버네티스 보안의 개요
 
-**개념:** 컨테이너 오케스트레이션 환경에서 클러스터 구성 요소(Control Plane)와 워크로드(Worker Node)를 외부 위협 및 내부 설정 오류로부터 보호하기 위한 보안 메커니즘
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["복잡한 공격 표면 (MSA)"] -- "4C 다층 방어 모델 적용" --> B["강화된 클러스터 (Secure K8s)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
 
-**필요성:** 복잡한 마이크로서비스 아키텍처(MSA)에서의 공격 표면(Attack Surface) 증가 및 컨테이너 간 횡적 이동(Lateral Movement) 방어 필요
+**정의**: 컨테이너 오케스트레이션 환경에서 클러스터 구성 요소( **Control Plane** )와 워크로드( **Worker Node** )를 외부 위협 및 내부 설정 오류로부터 보호하기 위한 다각적 보안 메커니즘  
+
+**도입 필요성**:  
+( **공격 표면 증가** ) 마이크로서비스 아키텍처( **MSA** ) 확산으로 인한 복잡한 통신 경로 및 노출 지점 증대  
+( **횡적 이동 방어** ) 컨테이너 침투 시 인접 컨테이너나 호스트로 확산되는 횡적 이동( **Lateral Movement** ) 차단 필요  
+( **구성 오류 방지** ) 선언적 설정( **YAML** )의 보안 미흡으로 인한 권한 남용 및 데이터 유출 사고 예방  
 
 ---
 

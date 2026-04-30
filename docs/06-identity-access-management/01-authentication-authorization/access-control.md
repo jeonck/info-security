@@ -8,12 +8,20 @@ sidebar_position: 3
 
 ## I. 접근 제어의 정의 및 3대 요소
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["무분별한 접근"] -- "식별 / 인증 / 인가 정책" --> B["자원 보호 및 오남용 방지"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 주체(Subject)가 객체(Object)에 접근할 때, 적절한 권한이 있는지 확인하고 이를 허용하거나 거부하는 정책 및 기술적 수단
 
-**3대 요소**:
-- **식별**(Identification): 주체가 누구인지 주장하는 과정 (ID 입력)
-- **인증**(Authentication): 주체의 주장이 맞는지 증명 (Password, 생체인증)
-- **인가**(Authorization): 검증된 주체에게 특정 자원 사용 권한을 부여
+**핵심 가치**:  
+ (**기밀성 유지**) 인가되지 않은 주체의 자원 접근을 차단하여 정보의 외부 유출 방지  
+ (**무결성 보장**) 권한이 없는 사용자의 데이터 수정 및 삭제를 제한하여 정보의 정확성 보호  
+ (**가용성 확보**) 정당한 권한을 가진 사용자가 필요할 때 언제든 자원에 접근할 수 있도록 보장  
 
 ---
 

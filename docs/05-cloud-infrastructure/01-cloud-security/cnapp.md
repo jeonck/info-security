@@ -8,9 +8,20 @@ sidebar_position: 4
 
 ## I. 클라우드 보안 파편화의 해결사, CNAPP의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["보안 도구 파편화"] -- "CSPM + CWPP 통합 플랫폼" --> B["클라우드 통합 가시성"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 가상머신, 컨테이너, 서버리스 등 클라우드 환경의 자산 설정 관리(CSPM)와 워크로드 보호(CWPP)를 하나로 통합한 클라우드 네이티브 보안 플랫폼
 
-**등장 배경**: 개별 보안 솔루션 도입으로 인한 보안 사각지대 발생, 관리 복잡성 증가 및 사후 대응 중심 보안의 한계 극복
+**필요성**:  
+ (**보안 파편화 해결**) CSPM, CWPP 등 개별 솔루션의 통합을 통해 보안 사각지대 및 관리 복잡성 해소  
+ (**연관 분석 강화**) 인프라 설정과 워크로드 위협을 결합 분석하여 실제 위험도가 높은 자산 우선 보호  
+ (**라이프사이클 보호**) 개발(Artifact 스캔)부터 운영(Runtime)까지 클라우드 전 과정의 보안 가시성 확보  
 
 ---
 

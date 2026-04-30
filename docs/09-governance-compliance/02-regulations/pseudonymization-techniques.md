@@ -8,9 +8,20 @@ sidebar_position: 3
 
 ## I. 가명정보의 안전한 활용을 위한 가명처리 기술의 개요
 
-**정의:** 개인정보의 일부를 삭제하거나 대체하여 추가 정보 없이는 특정 개인을 알아볼 수 없도록 처리하는 기술적 방법
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["식별 가능 정보 (Identifiable)"] -- "5대 가명처리 기술 적용" --> B["가명정보 (De-identified)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
 
-**목적:** 데이터의 통계적 유용성(Utility) 확보와 정보주체의 프라이버시(Privacy) 보호 간의 균형(Balance) 달성
+**정의**: 개인정보의 일부를 삭제하거나 대체하여 추가 정보 없이는 특정 개인을 알아볼 수 없도록 처리하는 기술적 방법  
+
+**핵심 가치 및 목적**:  
+( **데이터 유용성** ) 분석 목적에 부합하도록 데이터의 통계적 속성과 품질( **Utility** ) 유지  
+( **프라이버시 보호** ) 재식별 위험을 최소화하여 정보주체의 개인정보( **Privacy** ) 권리 보장  
+( **리스크 관리** ) 기술적 조치를 통해 법적 준거성을 확보하고 보안 사고(재식별) 위험 원천 차단  
 
 ---
 

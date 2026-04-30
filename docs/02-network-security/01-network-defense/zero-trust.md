@@ -6,11 +6,22 @@ sidebar_position: 2
 
 # 제로 트러스트 (Zero Trust)
 
-## I. "Never Trust, Always Verify", 제로 트러스트의 개요
+## I. "**Never Trust**, **Always Verify**", 제로 트러스트의 개요
 
-**정의:** 내부와 외부의 구분을 없애고, 자원에 접근하는 모든 요소(사용자, 기기, 네트워크)를 신뢰하지 않으며 상시 검증하는 보안 모델
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["경계 중심 보안"] -- "신뢰의 재정의 (상시 검증)" --> B["자원 중심 보안"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
 
-**등장 배경:** 클라우드 확산에 따른 경계 붕괴, 내부자 위협 증가, 지능형 지속 위협(APT) 대응 한계
+**정의**: 내부와 외부의 구분을 없애고, 자원에 접근하는 모든 요소(사용자, 기기, 네트워크)를 신뢰하지 않으며 상시 검증하는 보안 모델  
+
+**등장 배경**:  
+( **경계 붕괴** ) 클라우드 및 원격 근무 확산으로 기존 네트워크 경계 모호  
+( **내부자 위협** ) 신뢰받는 내부 사용자에 의한 데이터 유출 및 오남용 증가  
+( **APT 대응** ) 지능형 지속 위협에 따른 침투 탐지 및 수평 이동 차단 필요  
 
 ---
 

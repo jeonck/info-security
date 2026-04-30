@@ -6,13 +6,22 @@ sidebar_position: 5
 
 # 키 분배 문제의 해결사, Diffie-Hellman
 
-## I. Diffie-Hellman 키 교환의 정의
+## I. 키 분배 문제의 해결사, Diffie-Hellman의 개요
 
-**개념:** 이산대수 문제(Discrete Logarithm Problem)의 계산적 어려움을 기반으로, 상대방의 개인키를 알지 못해도 공통의 비밀키를 도출해내는 알고리즘
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["공개 채널 (Insecure Channel)"] -- "이산대수 기반 키 도출" --> B["공유 비밀키 (Shared Secret Key)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
 
-**목표:** 대칭키 암호화에 사용할 '세션키'를 안전하게 공유하여 키 분배 문제를 해결함
+**정의**: 이산대수 문제(Discrete Logarithm Problem)의 계산적 어려움을 기반으로, 통신 주체가 개인키를 공유하지 않고도 공개 채널을 통해 공통의 비밀키를 도출하는 암호 알고리즘  
 
-> 암호화되지 않은 통신 채널을 통해 두 당사자가 안전하게 **공유 비밀키(Shared Secret Key)**를 생성할 수 있도록 설계된 최초의 공개키 기반 알고리즘
+**핵심 특징**:  
+( **키 분배 문제 해결** ) 사전에 키를 공유할 필요 없이 안전하게 세션키 도출 가능  
+( **최초의 공개키 기반** ) 1976년 발표된 최초의 공개키 암호 알고리즘으로 현대 암호학의 기점  
+( **이산대수 기반** ) 유한체 상의 거듭제곱 연산의 역연산이 어렵다는 수학적 원리 활용  
 
 ---
 

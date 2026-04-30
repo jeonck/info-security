@@ -8,8 +8,20 @@ sidebar_position: 4
 
 ## I. 전자적 인감증명, 전자서명의 정의
 
-- 송신자가 전자문서의 해시(Hash) 값을 자신의 **개인키**(Private Key)로 암호화하여 문서에 첨부하는 기술
-- 전자문서의 **무결성**(Integrity), **인증**(Authentication), **부인방지**(Non-repudiation)를 보장함
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["전자 문서"] -- "송신자 개인키 서명" --> B["무결성 및 부인방지 확보"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
+**정의**: 송신자가 전자문서의 해시(Hash) 값을 자신의 **개인키**(Private Key)로 암호화하여 문서에 첨부하는 기술
+
+**핵심 가치**:  
+ (무결성) 전송 중 데이터가 위조되거나 변조되지 않았음을 증명함  
+ (인증) 서명자가 본인임을 확인하고 신원을 보증함  
+ (부인 방지) 서명자가 나중에 서명 사실을 부인할 수 없도록 법적/기술적 증거를 제공함  
 
 ---
 

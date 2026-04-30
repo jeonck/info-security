@@ -8,9 +8,20 @@ sidebar_position: 3
 
 ## I. 소프트웨어 투명성과 무결성의 확보, 공급망 보안의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["오픈소스 위협"] -- "SBOM 및 SLSA 프레임워크" --> B["소프트웨어 신뢰성 보장"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 소프트웨어가 생산되어 사용자에게 전달되기까지의 전 과정(설계, 개발, 빌드, 배포)에서 보안 위협을 관리하고 신뢰성을 보장하는 활동
 
-**필요성**: Log4j 취약점 사태, SolarWinds 해킹 사고 등 오픈소스 및 서드파티 라이브러리를 통한 공격 급증에 따른 대응
+**필요성**:  
+ (**위협 급증 대응**) Log4j, SolarWinds 사태와 같은 공급망 공격에 대한 선제적 방어 체계 필요  
+ (**투명성 확보**) 소프트웨어 구성 요소(SBOM)의 가시성을 확보하여 취약점 발생 시 신속 대응  
+ (**신뢰성 보장**) 개발부터 배포까지 전 과정의 무결성을 검증하여 변조된 SW 유통 방지  
 
 ---
 

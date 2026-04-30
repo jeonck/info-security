@@ -8,9 +8,20 @@ sidebar_position: 5
 
 ## I. 클라우드 데이터 가시성 확보의 핵심, DSPM의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["파편화된 데이터"] -- "데이터 중심 리스크 관리" --> B["Shadow Data 식별 및 보호"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 클라우드 인프라 내 정형 / 비정형 데이터의 위치를 자동으로 탐지하고, 데이터의 민감도와 보안 위협을 분석하여 가시성을 제공하는 보안 기술
 
-**등장 배경**: 멀티 / 하이브리드 클라우드 확산으로 인한 데이터 파편화, 관리되지 않는 '섀도우 데이터(Shadow Data)' 증가, 데이터 유출 방지에 대한 규제(GDPR 등) 강화
+**필요성**:  
+ (**섀도우 데이터 식별**) IT 부서의 통제를 벗어난 복제본, 테스트 DB 등 숨겨진 데이터 자산의 자동 탐지  
+ (**민감도 기반 보호**) 데이터 자체의 민감도(개인정보 등)를 분류하고 중요도에 따른 차별화된 보안 적용  
+ (**규제 준수 증명**) GDPR, ISMS-P 등 강화된 데이터 보호 규제에 대응하기 위한 지속적인 가시성 확보  
 
 ---
 

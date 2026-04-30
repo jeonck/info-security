@@ -8,9 +8,20 @@ sidebar_position: 4
 
 ## I. 개인정보 침해사고의 선제적 예방, 개인정보 영향평가의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["시스템 구축/변경"] -- "위험 요인 분석 및 개선" --> B["개인정보 침해 예방"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 개인정보 파일을 운용하는 시스템의 구축·변경 시, 개인정보 침해 위험요인을 분석하고 개선 사항을 도출하는 제도적 절차
 
-**핵심 목적**: 개인정보 보호 내재화(Privacy by Design), 침해사고 리스크 최소화, 법적 컴플라이언스 준수
+**핵심 가치**:  
+ (**Privacy by Design**) 시스템 구축 초기 단계부터 개인정보 보호 고려 사항을 설계에 반영  
+ (**침해 사고 예방**) 잠재적인 개인정보 노출 위험 요인을 사전에 분석하여 유출 사고를 원천적으로 방지  
+ (**법적 안전성 확보**) 개인정보 보호법 등 관련 법령 준수를 통해 기관의 법적 리스크 해소 및 신뢰도 향상  
 
 ---
 

@@ -8,9 +8,20 @@ sidebar_position: 1
 
 ## I. 대칭키 암호의 정의 및 특징
 
-**정의**: 송신자와 수신자가 사전에 공유된 **단일 비밀키**(Secret Key)를 사용하여 평문을 암호문으로 바꾸고, 다시 평문으로 되돌리는 암호 체계
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["평문 (Plaintext)"] -- "단일 비밀키 (Secret Key) 기반 고속 연산" --> B["암호문 (Ciphertext)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
 
-**특징**: 비대칭키(공개키) 암호에 비해 연산 속도가 매우 빠르며, 알고리즘 구조가 상대적으로 단순하여 대용량 데이터 암호화에 효율적임
+**정의**: 송신자와 수신자가 사전에 공유된 "**단일 비밀키**"(Secret Key)를 사용하여 평문을 암호문으로 바꾸고, 다시 평문으로 되돌리는 암호 체계  
+
+**특징**:  
+( **고속 연산** ) 비대칭키 암호 대비 연산 속도가 매우 빠름  
+( **단순한 구조** ) 알고리즘 구조가 단순하여 S/W 및 H/W 구현이 용이함  
+( **효율성** ) 연산 효율성이 높아 대용량 데이터 처리 및 실시간 암호화에 적합함  
 
 ---
 

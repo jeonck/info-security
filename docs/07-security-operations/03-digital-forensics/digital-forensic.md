@@ -8,9 +8,21 @@ sidebar_position: 1
 
 ## I. 법적 증거 능력을 갖춘 디지털 증거 확보, 디지털 포렌식의 개요
 
-**정의:** PC, 스마트폰 등 디지털 기기에 저장된 데이터를 수집, 분석하여 법적 증거로 활용하기 위한 과학적 수사 기법
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["디지털 데이터 (Raw Data)"] -- "과학적 수사 및 무결성 입증" --> B["법적 증거 (Legal Evidence)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
 
-**핵심 가치:** 증거의 무결성(Integrity) 확보 및 법적 증거 능력(Admissibility) 인정
+**정의**: 컴퓨터, 스마트폰, 클라우드 등 디지털 기기에 저장된 전자적 데이터를 수집, 복구, 분석하여 법적 증거로 활용하기 위한 과학적 조사 및 수사 기법  
+
+**핵심 보안 원칙**:  
+( **무결성** ) 수집된 증거가 분석 과정에서 위변조되지 않았음을 해시( **Hash** ) 값 등으로 증명  
+( **연계 보관성** ) **Chain of Custody**: 증거 수집부터 법정 제출까지의 모든 경로와 담당자 기록 관리  
+( **재현성** ) 동일한 도구와 절차로 분석했을 때 동일한 결과가 도출되어야 하는 객관성 확보  
+( **적법성** ) 적법 절차 준수 및 영장주의 원칙에 의거하여 증거의 법적 효력( **Admissibility** ) 유지  
 
 ---
 

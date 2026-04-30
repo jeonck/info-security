@@ -8,9 +8,20 @@ sidebar_position: 1
 
 ## I. 생성형 AI 시대의 새로운 보안 위협, LLM 보안의 개요
 
-**정의:** LLM(대규모 언어 모델) 애플리케이션을 대상으로 하는 데이터 유출, 프롬프트 주입 등 10대 주요 보안 취약점 및 대응 체계
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["비인가 프롬프트 (Untrusted)"] -- "LLM 가드레일 (Filtering)" --> B["안전한 응답 (Trusted)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
 
-**특징:** 기존 웹 보안(OWASP Top 10)과 달리 비결정적 출력, 프롬프트 기반 공격 등 모델 고유의 특성에 기반한 위협 존재
+**정의**: 대규모 언어 모델( **LLM** ) 애플리케이션을 대상으로 하는 프롬프트 주입, 데이터 유출 등 전용 보안 취약점을 탐지하고 차단하기 위한 다층적 방어 체계  
+
+**핵심 특성 및 위협**:  
+( **비결정적 위협** ) 입력값에 따라 결과가 가변적인 모델의 특성을 악용한 우회 공격(프롬프트 인젝션 등) 발생  
+( **공격 표면 확장** ) 외부 데이터( **RAG** ) 및 플러그인 연동을 통한 간접 프롬프트 주입( **Indirect Injection** ) 위협 증대  
+( **데이터 보호** ) 모델 학습 데이터 내 민감 정보가 생성 과정을 통해 외부로 노출되는 데이터 유출( **Disclosure** ) 방어 필요  
 
 ---
 

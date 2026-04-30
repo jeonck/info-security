@@ -8,8 +8,18 @@ sidebar_position: 3
 
 ## I. 비즈니스 가치 중심의 보안 통제, COBIT 보안 관리의 정의
 
-- 기업의 비즈니스 목표 달성을 위해 IT 보안 활동을 **거버넌스**(Governance)와 **관리**(Management)로 이원화하여 전사적 시각에서 통제하는 체계
-- **COBIT 2019** 프레임워크를 기반으로 보안 위험(Risk)을 비즈니스 관점에서 평가하고 최적화하는 데 목적이 있음
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["IT 관리 부재"] -- "거버넌스 및 관리 이원화" --> B["비즈니스 가치 최적화"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
+**핵심 가치**:  
+ (**거버넌스 체계화**) 보안 활동을 거버넌스(Governance)와 관리(Management)로 명확히 분리하여 통제  
+ (**비즈니스 연계**) 보안 위험을 비즈니스 관점에서 평가하여 기업의 목표 달성과 보안 투자를 정렬  
+ (**최적화된 리스크 관리**) 프레임워크 기반의 정밀한 진단을 통해 보안 리스크를 수용 가능한 수준으로 관리  
 
 ---
 

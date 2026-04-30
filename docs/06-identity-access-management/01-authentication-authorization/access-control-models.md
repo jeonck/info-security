@@ -8,9 +8,20 @@ sidebar_position: 2
 
 ## I. 보안 정책 결정의 기준, 접근 제어 모델의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["임의적 권한 부여"] -- "강제적 / 역할 기반 모델" --> B["보안 정책 및 직무 분리"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 시스템 내 자원에 대한 비인가 접근을 차단하기 위해 주체의 신분, 등급, 역할에 따라 접근 권한을 제한하는 정책적 프레임워크
 
-**메커니즘**: 참조 모니터(Reference Monitor)가 보안 정책 DB를 확인하여 접근 허용 여부를 결정함
+**핵심 가치**:  
+ (**최소 권한 원칙**) 직무와 역할에 꼭 필요한 최소한의 권한만 부여하여 내부 위협 및 사고 전이 방지  
+ (**직무 분리**) 주요 업무의 수행과 승인 권한을 분리하여 부정행위 및 오남용 원천 차단  
+ (**중앙 집중 통제**) 일관된 보안 정책에 따라 모든 자원에 대한 접근을 단일 지점에서 검증 및 승인  
 
 ---
 

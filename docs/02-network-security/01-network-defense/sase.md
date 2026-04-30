@@ -8,9 +8,20 @@ sidebar_position: 4
 
 ## I. 네트워크와 보안의 클라우드 기반 융합, SASE의 개요
 
-**정의:** SD-WAN 등의 네트워크 기능과 차세대 방화벽, CASB, ZTNA 등 보안 서비스를 단일 클라우드 플랫폼에서 제공하는 아키텍처
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["네트워크 + 보안 (개별)"] -- "Cloud Native 융합" --> B["SASE (단일 플랫폼)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
 
-**등장 배경:** 클라우드 확산 및 원격 근무 증가에 따른 기존 데이터센터 중심(Hub-and-Spoke) 네트워크의 병목 현상 및 보안 경계 붕괴 해결
+**정의**: SD-WAN 등의 네트워크 기능과 차세대 방화벽, CASB, ZTNA 등 보안 서비스를 단일 클라우드 플랫폼에서 제공하는 클라우드 네이티브 아키텍처  
+
+**등장 배경**:  
+( **경계 붕괴** ) 클라우드 확산 및 원격 근무 증가로 인한 기존 경계 기반 보안 모델의 한계  
+( **네트워크 병목** ) 데이터센터 경유 방식(Backhauling)으로 인한 지연 시간 증가 및 성능 저하  
+( **관리 복잡성** ) 개별 보안 솔루션의 파편화로 인한 통합 정책 관리 및 가시성 확보의 어려움  
 
 ---
 

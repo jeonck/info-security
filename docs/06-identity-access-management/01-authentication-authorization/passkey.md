@@ -8,8 +8,18 @@ sidebar_position: 5
 
 ## I. 비밀번호 없는 시대의 서막, 패스키의 정의
 
-- 사용자의 기기(스마트폰, PC 등)에 저장된 암호화된 키 쌍을 활용하여, 별도의 비밀번호 입력 없이 지문·안면 인식만으로 웹사이트나 앱에 로그인하는 기술
-- **FIDO2**(WebAuthn) 기술을 기반으로 하며, 클라우드를 통해 여러 기기 간 자격 증명을 동기화하여 편의성을 극대화함
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["단일 기기 귀속"] -- "클라우드 동기화 기반 FIDO2" --> B["Passwordless 환경 완성"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
+**핵심 가치**:  
+ (**Passwordless 구현**) 기억하기 어렵고 탈취되기 쉬운 비밀번호를 없애 인증 과정의 근본적 보안 강화  
+ (**멀티 디바이스 동기화**) 클라우드를 통한 자격 증명 동기화로 기기 변경 시에도 재등록 없는 연속성 제공  
+ (**피싱 원천 차단**) 도메인 바인딩 기술을 통해 가짜 사이트에서의 인증 요청을 기술적으로 자동 거부  
 
 ---
 

@@ -8,8 +8,18 @@ sidebar_position: 1
 
 ## I. 신뢰 확인과 권한 부여, 인증과 인가의 정의
 
-- **인증**(Authentication): 주체(Subject)가 본인이라고 주장하는 신원을 시스템이 확인하고 검증하는 과정 (Who are you?)
-- **인가**(Authorization): 인증된 주체에게 특정 자원에 접근하거나 기능을 수행할 수 있는 권한을 허용하는 과정 (What can you do?)
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["사용자 요청"] -- "신원 확인 및 권한 부여" --> B["신뢰 기반 접근 통제"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
+**핵심 가치**:  
+ (**신원 검증**) 주체가 주장하는 신원의 진위 여부를 확인하여 시스템 진입점의 신뢰성 확보(**인증**)  
+ (**권한 제어**) 인증된 사용자의 행위 범위를 정의하고 최소 권한 원칙에 따라 자원 접근 허용(**인가**)  
+ (**보안 가시성**) 인증과 인가 기록(Log)을 통해 주체의 활동을 추적하고 사고 발생 시 책임 추적성 제공  
 
 ---
 

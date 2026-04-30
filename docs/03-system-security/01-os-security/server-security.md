@@ -6,23 +6,22 @@ sidebar_position: 2
 
 # 서버 보안의 체계적 방어 전략
 
-## I. 서버 보안의 정의 및 목표
-
-**정의:** 운영체제(OS), 애플리케이션, 데이터베이스 등 서버 구성 요소의 취약점을 제거하고 비인가된 접근을 차단하는 보안 활동
-
-**목표:** 서비스의 가용성 확보, 데이터의 기밀성 유지, 정보의 무결성 보장 (CIA Triad)
+## I. 서버 보안의 정의 및 방어 전략의 개요
 
 ```mermaid
-flowchart TD
-    SRV["서버 보안 목표\nCIA Triad"]
-    SRV --> C["기밀성\nConfidentiality\n인가된 접근만 허용"]
-    SRV --> I["무결성\nIntegrity\n데이터 변조 방지"]
-    SRV --> A["가용성\nAvailability\n서비스 연속성 확보"]
-
-    C --> C1["암호화\n접근제어\nSecure OS"]
-    I --> I1["패치 관리\n무결성 검증\n감사 로그"]
-    A --> A1["이중화\n백업\n방화벽·IPS"]
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["취약한 서버 (Default Config)"] -- "Hardening / Secure OS" --> B["강화된 서버 (Hardened Host)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
 ```
+
+**정의**: 운영체제(OS), 애플리케이션, 데이터베이스 등 서버 구성 요소의 취약점을 제거하고 비인가된 접근을 차단하여 서비스의 기밀성, 무결성, 가용성을 확보하는 보안 활동  
+
+**주요 방어 전략**:  
+( **호스트 요새화** ) **Hardening**: 불필요한 서비스 및 계정 제거, 최신 보안 패치 적용을 통한 공격 표면 최소화  
+( **커널 보안 강화** ) **Secure OS**: 참조 모니터와 **MAC**(**Mandatory Access Control**)을 통한 강력한 권한 통제 구현  
+( **다층 방어** ) **Defense in Depth**: 물리, 네트워크, 시스템, 앱, 데이터 계층별 보안 통제 중첩 적용  
 
 ---
 

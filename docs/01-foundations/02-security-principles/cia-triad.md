@@ -8,22 +8,20 @@ sidebar_position: 1
 
 ## I. 정보보안의 정의 및 3대 요소의 개요
 
-**정의:** 정보자산의 기밀성, 무결성, 가용성을 유지하기 위해 물리적·기술적·관리적 수단을 강구하는 상태
-
-**목표:** 비인가된 접근을 차단하고(C), 데이터의 정확성을 유지하며(I), 필요할 때 언제든 서비스를 제공(A)함
-
 ```mermaid
-flowchart TD
-    CIA["정보보안\nCIA Triad"]
-
-    CIA --> C["기밀성\nConfidentiality\n인가된 사용자만 접근"]
-    CIA --> I["무결성\nIntegrity\n불법 변경 방지"]
-    CIA --> A["가용성\nAvailability\n언제든 이용 가능"]
-
-    C --> C1["위협: 도청 / 스니핑\n대응: 암호화 / 접근제어 / DRM"]
-    I --> I1["위협: 메시지 변조 / 재전송\n대응: 해시함수 / 전자서명 / MAC"]
-    A --> A1["위협: DoS·DDoS / 랜섬웨어\n대응: 백업 / 이중화 / 로드밸런싱"]
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["정보 자산 (Raw Data)"] -- "보안 통제 (CIA 적용)" --> B["안전한 상태 (Secure State)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
 ```
+
+**정의**: 정보자산의 기밀성, 무결성, 가용성을 유지하기 위해 물리적·기술적·관리적 수단을 강구하는 상태  
+
+**핵심 보안 요소**:  
+( **기밀성** ) **Confidentiality**: 인가된 사용자만 접근할 수 있도록 도청 및 유출 방지  
+( **무결성** ) **Integrity**: 정보가 비인가자에 의해 변조되지 않고 정확성과 완전성이 보장되는 상태  
+( **가용성** ) **Availability**: 인가된 사용자가 필요할 때 언제든 정보 및 서비스에 접근할 수 있는 상태  
 
 ---
 

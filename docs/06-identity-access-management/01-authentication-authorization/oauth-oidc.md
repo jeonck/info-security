@@ -8,9 +8,20 @@ sidebar_position: 6
 
 ## I. 권한 위임의 표준, OAuth 2.0의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["비밀번호 공유"] -- "토큰 기반 권한 위임" --> B["안전한 제3자 서비스 연동"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 제3자 애플리케이션이 사용자의 비밀번호 노출 없이 자원에 접근할 수 있도록 권한을 위임(Delegation)하는 오픈 표준 프로토콜
 
-**핵심 가치**: 비밀번호 공유 방지, 범위(**Scope**) 기반의 세밀한 권한 제어
+**핵심 가치**:  
+ (**비밀번호 보호**) 제3자 앱에 사용자 비밀번호를 노출하지 않고 안전한 자원 접근 권한만 위임  
+ (**세밀한 인가**) 범위(Scope) 기반의 권한 제어를 통해 필요한 최소한의 데이터만 접근 허용  
+ (**표준화된 인증**) OIDC를 통한 통합 신원 확인 체계를 구축하여 서비스 간 사용자 인증의 호환성 확보  
 
 ---
 

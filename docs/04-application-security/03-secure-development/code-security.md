@@ -8,9 +8,20 @@ sidebar_position: 2
 
 ## I. 소프트웨어 결함의 선제적 제거, 코드 보안의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["소스코드 취약점"] -- "SAST / DAST / 시큐어 코딩" --> B["결함 없는 안전한 SW"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: SW 개발 과정에서 발생할 수 있는 보안 약점을 분석하고, 안전한 코딩 표준을 적용하여 취약점 없는 소프트웨어를 제작하는 활동
 
-**필요성**: 배포 후 취약점 수정 비용(Patch Cost) 절감 및 OWASP Top 10 등 알려진 공격 기법 사전 차단
+**필요성**:  
+ (**비용 절감**) 개발 초기 단계의 보안 약점 제거를 통한 배포 후 수정 비용 최소화  
+ (**선제적 방어**) OWASP Top 10 등 알려진 주요 취약점 및 공격 기법의 사전 차단  
+ (**SW 신뢰성 확보**) 안전한 코딩 표준 준수를 통한 소프트웨어 자체의 보안 내재화  
 
 ---
 

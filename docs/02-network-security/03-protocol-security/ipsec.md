@@ -6,19 +6,23 @@ sidebar_position: 2
 
 # 네트워크 계층의 수호자, IPSec
 
-## I. 하이브리드 보안 서비스의 정수, IPSec의 정의
-
-**개념:** IP 망을 통해 데이터를 전송할 때 통신 주체 간 암호화 및 인증을 통해 보안 채널을 구축하는 프로토콜 집합
-
-**목표:** 기밀성(ESP 암호화), 무결성(AH/ESP 인증), 인증(IKE), 재전송 공격 방지(Sequence Number)
+## I. 하이브리드 보안 서비스의 정수, IPSec의 개요
 
 ```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
 flowchart LR
-    IPSEC["IPSec\n보안 목표"] --> C["기밀성\nESP 암호화"]
-    IPSEC --> I["무결성\nAH / ESP 인증"]
-    IPSEC --> A["인증\nIKE 키 교환"]
-    IPSEC --> R["재전송 방지\nSequence Number"]
+    A["신뢰할 수 없는 IP 망"] -- "보안 채널 (ESP/AH) 수립" --> B["보안 터널 (VPN)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
 ```
+
+**정의**: IP 망을 통해 데이터를 전송할 때 통신 주체 간 암호화 및 인증을 통해 네트워크 계층(L3)에서 보안 채널을 구축하는 프로토콜 집합  
+
+**보안 목표**:  
+( **기밀성** ) **ESP**(**Encapsulating Security Payload**)를 통한 데이터 암호화  
+( **무결성** ) **AH**(**Authentication Header**) 및 **ESP** 인증을 통한 위변조 방지  
+( **인증** ) **IKE**(**Internet Key Exchange**) 프로토콜을 이용한 통신 개체 확인 및 키 교환  
+( **가용성** ) 시퀀스 번호(Sequence Number)를 활용한 재전송 공격(Replay Attack) 방지  
 
 ---
 

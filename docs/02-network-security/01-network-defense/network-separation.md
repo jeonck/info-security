@@ -8,9 +8,20 @@ sidebar_position: 1
 
 ## I. 보안의 경계 강화, 망 분리 및 망 연동의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["단일 망 구성"] -- "물리적 / 논리적 격리" --> B["인터넷 위협 차단"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 내부 업무망과 외부 인터넷망을 격리하여 외부 공격을 차단하는 망 분리와, 분리된 망 간의 안전한 데이터 이동을 보장하는 망 연동 기술의 총칭
 
-**필요성**: 지능형 지속 위협(APT) 대응, 개인정보 유출 방지, 정보통신망법 및 ISMS-P 컴플라이언스 준수
+**필요성**:  
+ (**APT 대응**) 지능형 지속 위협(APT)으로부터 내부망 자산 보호 및 공격 전이 차단  
+ (**데이터 유출 방지**) 중요 정보 및 개인정보의 외부 유출 경로를 원천적으로 격리  
+ (**컴플라이언스 준수**) 정보통신망법, 개인정보 보호법 및 ISMS-P 인증 요구사항 충족  
 
 ---
 

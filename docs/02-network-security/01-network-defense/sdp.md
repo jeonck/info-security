@@ -6,11 +6,22 @@ sidebar_position: 3
 
 # SDP (Software Defined Perimeter)
 
-## I. "선 인증, 후 접속" 기반의 네트워크 보안, SDP의 개요
+## I. "**선 인증**, **후 접속**" 기반의 네트워크 보안, SDP의 개요
 
-**정의:** 장치 인증 및 사용자 신뢰를 확인하기 전까지는 인프라를 외부로부터 은폐(Black Cloud)하는 소프트웨어 정의 보안 아키텍처
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["공격 표면 (Visibility)"] -- "은폐 (Black Cloud)" --> B["신뢰 기반 연결 (Drop-all)"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
 
-**특징:** 제로 트러스트(Zero Trust) 구현의 핵심 기술로, 접속 전 모든 요소를 검증하여 공격 표면(Attack Surface) 최소화
+**정의**: 장치 인증 및 사용자 신뢰를 확인하기 전까지는 인프라를 외부로부터 은폐(Black Cloud)하는 소프트웨어 정의 보안 아키텍처  
+
+**특징**:  
+( **신뢰 기반** ) 제로 트러스트(Zero Trust) 구현의 핵심 기술로 선 인증 후 접속 메커니즘 적용  
+( **은폐성** ) 미인증 사용자에게 리소스를 노출하지 않는 "**블랙 클라우드**"(Black Cloud) 구현  
+( **공격 표면 최소화** ) 비인증 트래픽을 원천 차단하여 스캔 및 분산 서비스 거부 공격(DDoS) 방어  
 
 ---
 

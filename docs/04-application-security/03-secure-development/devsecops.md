@@ -8,9 +8,20 @@ sidebar_position: 1
 
 ## I. 보안 내재화를 통한 신속한 서비스 제공, DevSecOps의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["사후 보안 점검"] -- "보안 자동화 및 Shift-Left" --> B["신속하고 안전한 서비스"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의:** 소프트웨어 개발 생명주기(SDLC) 전 과정에 보안 활동을 자동화하여 통합함으로써 보안을 공동의 책임으로 다루는 문화 및 방법론
 
-**Shift-Left Security**: 보안 검토를 SDLC의 후반부(운영)에서 **전반부**(계획/설계/개발)로 이동시켜 결함을 조기에 식별하고 조치하는 전략
+**핵심 가치**:  
+ (**조기 발견**) 보안 검토를 개발 초기 단계로 이동시켜 결함을 조기에 식별(Shift-Left)  
+ (**자동화 통합**) 보안 스캔 및 검증 과정을 CI / CD 파이프라인에 통합하여 휴먼 에러 방지  
+ (**공동 책임**) 보안을 특정 팀의 업무가 아닌 개발 / 운영 / 보안 팀 모두의 공동 책임으로 전환  
 
 ---
 

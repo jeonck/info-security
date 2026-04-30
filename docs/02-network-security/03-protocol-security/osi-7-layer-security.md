@@ -8,9 +8,20 @@ sidebar_position: 1
 
 ## I. 다층 방어 체계의 핵심, OSI 7 Layer 보안의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["단일 보안 통제"] -- "계층별 특화 보안 적용" --> B["다층 방어 체계 구축"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 국제표준화기구(ISO)가 정의한 네트워크 7계층별로 특화된 보안 위협을 분석하고, 이에 대응하는 보안 기술 및 솔루션을 적용하는 체계
 
-**목적**: 특정 계층의 보안이 무력화되더라도 다른 계층에서 위협을 차단하는 중첩 보안(Layered Security) 구현
+**핵심 가치**:  
+ (**중첩 보안**) 특정 계층이 무력화되더라도 다른 계층에서 위협을 차단하는 다층 방어 체계 구현  
+ (**가시성 확보**) 각 계층별 프로토콜 분석을 통해 네트워크 트래픽에 대한 세밀한 통제력 제공  
+ (**책임 추적성**) 장애나 보안 사고 발생 시 정확한 발생 지점 파악 및 빠른 대응 가능  
 
 ---
 

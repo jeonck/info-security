@@ -8,9 +8,20 @@ sidebar_position: 2
 
 ## I. 비대칭키 암호의 정의 및 특징
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["비밀키 사전 공유"] -- "공개키 / 개인키 쌍 활용" --> B["키 분배 문제 해결"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 수학적 난제(소인수분해, 이산대수 등)를 기반으로 생성된 **공개키**(Public Key)와 **개인키**(Private Key) 쌍을 이용하는 암호 방식
 
-**특징**: 키 분배가 용이하고 기밀성뿐만 아니라 부인 방지(Non-repudiation) 기능을 제공하나, 대칭키 대비 연산 속도가 느림
+**특징**:  
+ (키 분배 용이) 공개키를 공개적으로 배포할 수 있어 대칭키 암호에 비해 키 관리가 매우 용이함  
+ (기밀성 및 부인 방지) 데이터 암호화를 통한 기밀성 보장과 더불어 전자서명을 통한 부인 방지 기능을 제공함  
+ (연산 복잡성) 수학적 난제 기반의 복잡한 연산 과정으로 인해 대칭키 암호 방식보다 속도가 상대적으로 느림  
 
 ---
 

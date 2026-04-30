@@ -8,9 +8,21 @@ sidebar_position: 5
 
 ## I. 신뢰 가능한 AI를 위한 글로벌 표준, EU AI Act의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["자율적 AI 운영"] -- "위험 기반 규제 프레임워크" --> B["신뢰 가능한 AI 생태계"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의:** AI 시스템이 인간의 안전, 건강, 기본권을 침해하지 않도록 위험 수준별로 의무 사항을 규정한 EU의 법적 프레임워크
 
-**핵심 원칙:** 위험 기반 분류체계 도입, 투명성 강화, 고위험 AI에 대한 엄격한 거버넌스 요구
+**특징**:  
+ (**위험 기반 규제**) AI 시스템의 위험 수준에 따라 4단계로 분류하고 차등화된 의무 사항 부여  
+ (**인간 중심 설계**) 인간의 안전, 건강, 기본권을 보호하기 위해 고위험 AI에 대한 엄격한 감독 요구  
+ (**글로벌 표준 지향**) 유럽을 넘어 전 세계 AI 거버넌스 및 윤리적 가이드라인의 표준 모델 제시  
+
 
 ---
 

@@ -8,9 +8,20 @@ sidebar_position: 2
 
 ## I. 클라우드 서비스의 안전한 통로, CASB의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["Shadow IT 확산"] -- "클라우드 통합 보안 정책" --> B["가시성 및 위협 방어"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 기업의 온프레미스 인프라와 클라우드 서비스 사이에 배치되어 보안 정책을 통합적으로 적용하고 가시성을 제공하는 보안 솔루션 또는 서비스
 
-**필요성**: 섀도우 IT(Shadow IT) 대응, 클라우드 내 민감 데이터 유출 방지(DLP), 클라우드 계정 탈취 공격 방어
+**필요성**:  
+ (**섀도우 IT 통제**) 기업 통제 밖의 비인가 클라우드 서비스 이용 현황 식별 및 위험 관리  
+ (**데이터 유출 방지**) 클라우드 환경에 최적화된 DLP 기능을 통해 민감 정보의 외부 유출 차단  
+ (**계정 보호**) 비정상적인 로그인 탐지 및 접근 제어를 통해 클라우드 계정 탈취 공격에 대응  
 
 ---
 

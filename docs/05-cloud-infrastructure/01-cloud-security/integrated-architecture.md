@@ -8,9 +8,20 @@ sidebar_position: 6
 
 ## I. 계층적 방어 체계, 클라우드 통합 보안의 개요
 
+```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'edgeLabelBackground': '#fff' }}}%%
+flowchart LR
+    A["개별 보안 솔루션"] -- "계층적 보안 스택 통합" --> B["클라우드 네이티브 보안"]
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#e1f5fe,stroke:#01579b,stroke-width:1px
+```
+
 **정의**: 클라우드 서비스의 설정(Control Plane)부터 실제 데이터 처리(Data Plane) 및 사용자 접속 접점까지 전 영역을 아우르는 다층 방어(Defense in Depth) 체계
 
-**핵심 가치**: 파편화된 보안 도구의 통합, 가시성 확보, 그리고 데이터 중심의 리스크 관리
+**핵심 가치**:  
+ (**통합 가시성**) 파편화된 보안 솔루션들을 단일 아키텍처로 결합하여 클라우드 전 영역의 가시성 확보  
+ (**데이터 중심 보안**) 인프라나 네트워크가 아닌 보호해야 할 '데이터 자체'에 집중한 리스크 관리 체계  
+ (**자동화된 대응**) 정책 기반의 실시간 모니터링과 자동 조치를 통해 보안 운영의 효율성 및 속도 극대화  
 
 ---
 
