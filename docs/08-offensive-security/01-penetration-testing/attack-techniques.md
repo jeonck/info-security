@@ -1,7 +1,7 @@
 ---
 title: 정보보안 공격기법의 체계적 분류
 sidebar_label: 공격기법 체계적 분류
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # 정보보안 공격기법의 체계적 분류
