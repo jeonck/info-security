@@ -121,6 +121,14 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['bash', 'python', 'java', 'csharp', 'sql'],
     },
+    algolia: {
+      appId: 'XY0ZXJZ7AQ',
+      apiKey: '984cf91c9d43c4e1676d234891034869',
+      indexName: 'info-security',
+      contextualSearch: true,
+      searchParameters: {},
+      searchPagePath: 'search',
+    },
   } satisfies Preset.ThemeConfig,
 };
 

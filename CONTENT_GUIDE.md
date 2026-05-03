@@ -37,7 +37,7 @@
 
 ## Mermaid 다이어그램 작성 시 주의사항
 
-### ✅ 정상
+### ✅ 정상 (flowchart)
 ```mermaid
 graph TD
     A["한글 라벨"] --> B{"한글 조건?"}
@@ -45,6 +45,20 @@ graph TD
 ```
 - 노드 라벨은 `""`로 감싸기
 - 화살표 라벨도 `""`로 감싸기
+- **양방향 화살표**: `flowchart`에서는 `A <--> B` 사용 가능
+
+### ❌ 오류 주의 (sequenceDiagram)
+- **양방향 화살표 금지**: `sequenceDiagram`에서는 `A <-> B` 또는 `A <->> B`와 같은 양방향 화살표를 지원하지 않습니다. 
+- **해결책**: 반드시 두 개의 개별 화살표(`A ->> B`, `B ->> A`)로 나누어 작성해야 합니다.
+
+### ✅ 올바른 sequenceDiagram 예시
+```mermaid
+sequenceDiagram
+    participant A
+    participant B
+    A ->> B: 요청
+    B -->> A: 응답
+```
 
 ---
 
