@@ -63,6 +63,8 @@ Cause: Could not parse expression with acorn
 | 그리스 문자 | `$\phi$`, `$\equiv$` | `φ`, `≡` (유니코드 직접 입력) |
 | 복잡한 수식 | `$$e \times d \equiv 1 \pmod{\phi(n)}$$` | `` `e × d ≡ 1 (mod φ(n))` `` |
 | 분수 | `$\frac{a}{b}$` | `a/b` |
+| 텍스트 레이블 포함 | `$$\text{Speedup}(S) = \frac{1}{(1-P)+\frac{P}{N}}$$` | 펜스 코드 블록(` ``` `) |
+| 인라인 변수명 | `$S$`, `$P$`, `$N$`, `$(1-P)$` | `` `S` ``, `` `P` ``, `` `N` ``, `` `(1-P)` `` |
 
 ### `docusaurus.config.ts` 에 추가하지 말 것
 
@@ -78,6 +80,44 @@ docs: {
   rehypePlugins: [rehypeKatex],
 }
 ```
+
+### `\t` 이스케이프 주의
+
+`\text{...}` 명령을 일부 편집기가 `\t`(탭 문자)로 변환하는 경우가 있습니다.  
+파일에 저장된 내용이 `	ext{...}` 형태로 깨져 있으면 acorn 파서가 동일한 오류를 냅니다.  
+수식 블록 전체를 코드 블록으로 대체하면 이 문제도 함께 해소됩니다.
+
+---
+
+## 실제 수정 사례
+
+### `amdahls-law.md` (2026-05-06)
+
+**오류 위치:** `docs/05-cloud-infrastructure/03-infrastructure-security/amdahls-law.md` 37번째 줄
+
+**문제 코드:**
+```
+$$
+	ext{Speedup}(S) = \frac{1}{(1-P) + \frac{P}{N}}
+$$
+
+- $S$: ...
+- $P$: ...
+- $N$: ...
+- $(1-P)$: ...
+```
+
+**수정 후:**
+````
+```
+Speedup(S) = 1 / ((1 - P) + P/N)
+```
+
+- `S`: ...
+- `P`: ...
+- `N`: ...
+- `(1-P)`: ...
+````
 
 ---
 
